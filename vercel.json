@@ -9,12 +9,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "app.py"
+      "dest": "/app.py"
     }
-  ],
-  "functions": {
-    "api/*.py": {
-      "runtime": "python3.11.1"
-    }
-  }
+  ]
 }
