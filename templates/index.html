@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Streamer</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+
+</head>
+<body>
+    <h1>Video Streamer</h1>
+    <h2> well come anna 🙏🙏</h2>
+    <ul>
+        {% for video in videos %}
+            <li>
+                <a href="{{ url_for('video', filename=video) }}" target="_blank">{{ video }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
